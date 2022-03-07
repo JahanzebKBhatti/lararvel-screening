@@ -7,6 +7,16 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Setting up Project
+* **Step 1:** Clone this repo onto a local folder
+* **Step 2:** Run `composer install` at root and use `--ignore-platform-reqs` flag with it. Its a simple project which won't be using ALL the features of Laravel and using `--ignore-platform-reqs` will help set up relatively straightforward Laravel build. 
+* **Step 3:** Rename `.env.example` file in root to `.env` file. 
+* **Step 4:** Add local database details in `.env` file. 
+* **Step 5:** Run `php artisan migrate` in root of project in CLI, to setup the database table for form submissions. 
+* **Step 6:** Run `php artisan server --port=8899` in root of project in CLI to start the application. Open the URL given in CLI console. (http://127.0.0.1:8899)
+* **Step 7:** Visit home URL `/` for project and follow the prompt to generate the `Key`. 
+* **Step 8:** Once key is generated, system will be ready to be tested. Go to URl `/screening` to open form. Fill in some test submissions and check the data being saved in database.
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
